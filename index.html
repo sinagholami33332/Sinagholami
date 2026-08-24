@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سینا غلامی | Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="lang-fa">
+
+    <!-- افکت‌های پس‌زمینه -->
+    <div class="bg-effects">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="bg-grid"></div>
+
+    <!-- هدر -->
+    <header>
+        <div class="container header-inner">
+            <a href="#hero" class="logo" data-lang-fa="" data-lang-en=""></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="desktopNav">
+                <a href="#hero" class="active" data-lang-fa="خانه" data-lang-en="Home">خانه</a>
+                <a href="#about" data-lang-fa="درباره من" data-lang-en="About">درباره من</a>
+                <a href="#skills" data-lang-fa="مهارت‌ها" data-lang-en="Skills">مهارت‌ها</a>
+                <a href="#education" data-lang-fa="تحصیلات" data-lang-en="Education">تحصیلات</a>
+                <a href="#contact" data-lang-fa="تماس" data-lang-en="Contact">تماس</a>
+            </nav>
+            <div class="controls">
+                <button class="ctrl-btn" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="ctrl-btn lang-btn" id="langToggle" aria-label="Toggle Language">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- منوی موبایل -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" data-lang-fa="خانه" data-lang-en="Home">خانه</a>
+        <a href="#about" data-lang-fa="درباره من" data-lang-en="About">درباره من</a>
+        <a href="#skills" data-lang-fa="مهارت‌ها" data-lang-en="Skills">مهارت‌ها</a>
+        <a href="#education" data-lang-fa="تحصیلات" data-lang-en="Education">تحصیلات</a>
+        <a href="#contact" data-lang-fa="تماس" data-lang-en="Contact">تماس</a>
+    </div>
+
+    <main>
+        <!-- ======== هیرو ======== -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1 class="hero-name" data-lang-fa="سینا غلامی" data-lang-en="Sina Gholami">سینا غلامی</h1>
+                        <p class="hero-title tech-font">FRONT-END DEVELOPER</p>
+                        <p class="hero-desc" data-lang-fa="ایده‌ها را به تجربه‌های دیجیتال مدرن تبدیل می‌کنم."
+                            data-lang-en="Turning ideas into modern digital experiences.">ایده‌ها را به تجربه‌های
+                            دیجیتال مدرن تبدیل می‌کنم.</p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="btn-primary" data-lang-fa="تماس با من"
+                                data-lang-en="Contact Me">تماس با من</a>
+                            <a href="#about" class="btn-outline" data-lang-fa="درباره من" data-lang-en="About Me">درباره
+                                من</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <span class="float-tag tag-html tech-font">&lt;HTML/&gt;</span>
+                        <span class="float-tag tag-css tech-font">.CSS { }</span>
+                        <span class="float-tag tag-js tech-font">JavaScript()</span>
+                        <div class="hero-card-wrap">
+                            <div class="hero-card" id="heroCard">
+                                <img src="./image/IMG_20260824_230514_225.jpg" alt="Avatar"
+                                    class="hero-avatar">
+                                <span class="hero-card-name" data-lang-fa="سینا غلامی" data-lang-en="Sina Gholami">سینا
+                                    غلامی</span>
+                                <span class="hero-card-role tech-font" data-lang-fa="طراح و توسعه‌دهنده وب"
+                                    data-lang-en="Web Designer & Developer">طراح و توسعه‌دهنده وب</span>
+                                <div class="hero-card-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== درباره من ======== -->
+        <section id="about">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag" data-lang-fa="درباره من" data-lang-en="About Me">درباره من</span>
+                    <h2 class="section-title" data-lang-fa="بیشتر بدانید" data-lang-en="Get to Know Me">بیشتر بدانید
+                    </h2>
+                </div>
+                <p class="about-intro reveal"
+                    data-lang-fa="سلام، سینا غلامی هستم. دانشجوی مهندسی کامپیوتر دانشگاه علم و فناوری مازندران. یک توسعه‌دهنده وب علاقه‌مند به طراحی سایت و ساخت تجربه‌های دیجیتال مدرن. برای من برنامه‌نویسی فقط نوشتن کد نیست؛ بلکه راهی برای تبدیل ایده‌ها به چیزی واقعی و قابل لمس است."
+                    data-lang-en="Hi, I'm Sina Gholami. A Computer Engineering student at Mazandaran University of Science and Technology. A web developer passionate about building websites and creating modern digital experiences. For me, programming isn't just writing code; it's a way to turn ideas into something real and tangible.">
+                    سلام، سینا غلامی هستم. دانشجوی مهندسی کامپیوتر دانشگاه علم و فناوری مازندران. یک توسعه‌دهنده وب
+                    علاقه‌مند به طراحی سایت و ساخت تجربه‌های دیجیتال مدرن. برای من برنامه‌نویسی فقط نوشتن کد نیست؛ بلکه
+                    راهی برای تبدیل ایده‌ها به چیزی واقعی و قابل لمس است.</p>
+
+                <div class="about-cards reveal">
+                    <div class="about-card">
+                        <div class="about-card-icon ic-creative"><i class="fas fa-palette"></i></div>
+                        <h3 data-lang-fa="خلاق" data-lang-en="Creative">خلاق</h3>
+                        <p data-lang-fa="به طراحی‌های مدرن و متفاوت علاقه دارم."
+                            data-lang-en="I'm interested in modern and unique designs.">به طراحی‌های مدرن و متفاوت علاقه
+                            دارم.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon ic-dev"><i class="fas fa-code"></i></div>
+                        <h3 data-lang-fa="توسعه‌دهنده" data-lang-en="Developer">توسعه‌دهنده</h3>
+                        <p data-lang-fa="تمرکزم روی توسعه وب و ساخت رابط‌های کاربری جذاب است."
+                            data-lang-en="My focus is on web development and building attractive user interfaces.">
+                            تمرکزم روی توسعه وب و ساخت رابط‌های کاربری جذاب است.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon ic-learn"><i class="fas fa-rocket"></i></div>
+                        <h3 data-lang-fa="یادگیرنده" data-lang-en="Learner">یادگیرنده</h3>
+                        <p data-lang-fa="همیشه در حال یادگیری تکنولوژی‌های جدید هستم."
+                            data-lang-en="Always learning new technologies.">همیشه در حال یادگیری تکنولوژی‌های جدید
+                            هستم.</p>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <h3 class="timeline-section-title" data-lang-fa="مسیر فعالیت من" data-lang-en="My Journey">مسیر
+                        فعالیت من</h3>
+                    <div class="timeline-h">
+                        <div class="timeline-h-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-year">1400</span>
+                            <span class="timeline-text" data-lang-fa="شروع یادگیری برنامه‌نویسی"
+                                data-lang-en="Started learning programming">شروع یادگیری برنامه‌نویسی</span>
+                        </div>
+                        <div class="timeline-h-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-year">1402</span>
+                            <span class="timeline-text" data-lang-fa="ورود به دانشگاه"
+                                data-lang-en="University admission">ورود به دانشگاه</span>
+                        </div>
+                        <div class="timeline-h-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-year">1403</span>
+                            <span class="timeline-text" data-lang-fa="اولین پروژه‌های حرفه‌ای"
+                                data-lang-en="First professional projects">اولین پروژه‌های حرفه‌ای</span>
+                        </div>
+                        <div class="timeline-h-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-year">1404</span>
+                            <span class="timeline-text" data-lang-fa="ادامه یادگیری و رشد"
+                                data-lang-en="Continued learning & growth">ادامه یادگیری و رشد</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== مهارت‌ها ======== -->
+        <section id="skills">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag" data-lang-fa="مهارت‌ها" data-lang-en="Skills">مهارت‌ها</span>
+                    <h2 class="section-title" data-lang-fa="توانایی‌های فنی من" data-lang-en="My Technical Abilities">
+                        توانایی‌های فنی من</h2>
+                    <p class="section-desc"
+                        data-lang-fa="تکنولوژی‌ها و ابزارهایی که در توسعه وب از آن‌ها استفاده می‌کنم."
+                        data-lang-en="Technologies and tools I use in web development.">تکنولوژی‌ها و ابزارهایی که در
+                        توسعه وب از آن‌ها استفاده می‌کنم.</p>
+                </div>
+                <div class="skills-grid reveal" id="skillsGrid">
+                    <!-- کارت‌های مهارت توسط جاوااسکریپت ساخته می‌شوند -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== تحصیلات ======== -->
+        <section id="education">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag" data-lang-fa="تحصیلات" data-lang-en="Education">تحصیلات</span>
+                    <h2 class="section-title" data-lang-fa="مسیر آکادمیک من" data-lang-en="My Academic Path">مسیر
+                        آکادمیک من</h2>
+                </div>
+
+                <div class="edu-card reveal">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-details">
+                        <h3 data-lang-fa="کارشناسی مهندسی کامپیوتر" data-lang-en="BSc Computer Engineering">کارشناسی
+                            مهندسی کامپیوتر</h3>
+                        <p data-lang-fa="گرایش هوش مصنوعی — دانشگاه علم و فناوری مازندران"
+                            data-lang-en="Artificial Intelligence — Mazandaran University of Science and Technology">
+                            گرایش هوش مصنوعی — دانشگاه علم و فناوری مازندران</p>
+                        <div class="edu-meta">
+                            <div class="edu-meta-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span data-lang-fa="ورودی ۱۴۰۲ | در حال تحصیل"
+                                    data-lang-en="Entered 2023 | Currently Studying">ورودی ۱۴۰۲ | در حال تحصیل</span>
+                            </div>
+                            <div class="edu-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-lang-fa="بهشهر ، مازندران" data-lang-en="Behshahr, Mazandaran">بهشهر،
+                                    مازندران</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-timeline reveal">
+                    <div class="edu-tl-item">
+                        <span class="tl-year">1402</span>
+                        <span class="tl-text" data-lang-fa="موفقیت در کنکور و انتخاب رشته مهندسی کامپیوتر"
+                            data-lang-en="Success in university entrance exam, chose Computer Engineering">موفقیت در
+                            کنکور و انتخاب رشته مهندسی کامپیوتر</span>
+                    </div>
+                    <div class="edu-tl-item">
+                        <span class="tl-year">1402 - 1403</span>
+                        <span class="tl-text" data-lang-fa="آشنایی با مبانی برنامه‌نویسی و ریاضیات دانشگاهی"
+                            data-lang-en="Learned programming fundamentals and academic mathematics">آشنایی با مبانی
+                            برنامه‌نویسی و ریاضیات دانشگاهی</span>
+                    </div>
+                    <div class="edu-tl-item">
+                        <span class="tl-year">1403 - 1404</span>
+                        <span class="tl-text" data-lang-fa="تعمیق در هوش مصنوعی و توسعه وب به صورت خودآموز"
+                            data-lang-en="Deepened knowledge in AI and self-taught web development">تعمیق در هوش مصنوعی
+                            و توسعه وب به صورت خودآموز</span>
+                    </div>
+                    <div class="edu-tl-item">
+                        <span class="tl-year" data-lang-fa="آینده" data-lang-en="Future">آینده</span>
+                        <span class="tl-text" data-lang-fa="ادامه مسیر به سمت تخصص در فرانت‌اند و هوش مصنوعی"
+                            data-lang-en="Continuing towards expertise in front-end and AI">ادامه مسیر به سمت تخصص در
+                            فرانت‌اند و هوش مصنوعی</span>
+                    </div>
+                </div>
+
+                <div class="reveal" style="margin-top: 48px;">
+                    <h3 class="interests-title" data-lang-fa="حوزه‌های مورد علاقه" data-lang-en="Areas of Interest">
+                        حوزه‌های مورد علاقه</h3>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-robot"></i>
+                            <span data-lang-fa="هوش مصنوعی" data-lang-en="Artificial Intelligence">هوش مصنوعی</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span data-lang-fa="برنامه‌نویسی" data-lang-en="Programming">برنامه‌نویسی</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-globe"></i>
+                            <span data-lang-fa="طراحی و توسعه وب" data-lang-en="Web Design & Dev">طراحی و توسعه
+                                وب</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-brain"></i>
+                            <span data-lang-fa="حل مسئله" data-lang-en="Problem Solving">حل مسئله</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== تماس ======== -->
+        <section id="contact">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag" data-lang-fa="تماس" data-lang-en="Contact">تماس</span>
+                    <h2 class="section-title" data-lang-fa="با من در ارتباط باشید" data-lang-en="Get in Touch">با من در
+                        ارتباط باشید</h2>
+                    <p class="section-desc"
+                        data-lang-fa="اگر پروژه‌ای دارید یا سوالی دارید، خوشحال می‌شوم از شما بشنوم."
+                        data-lang-en="If you have a project or a question, I'd be happy to hear from you.">اگر پروژه‌ای
+                        دارید یا سوالی دارید، خوشحال می‌شوم از شما بشنوم.</p>
+                </div>
+                <div class="contact-grid">
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" data-lang-fa="نام" data-lang-en="Name">نام</label>
+                            <input type="text" class="form-input" value="" id="nameInput">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-lang-fa="ایمیل" data-lang-en="Email">ایمیل</label>
+                            <input type="email" class="form-input tech-font" value="gholamisina123@gmail.com"
+                                id="emailInput">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" data-lang-fa="پیام" data-lang-en="Message">پیام</label>
+                            <textarea class="form-textarea" id="msgInput"
+                                data-lang-fa-placeholder="پیام خود را بنویسید..."
+                                data-lang-en-placeholder="Write your message..."
+                                placeholder="پیام خود را بنویسید..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" data-lang-fa="ارسال پیام"
+                            data-lang-en="Send Message">ارسال پیام</button>
+                    </form>
+                    <div class="contact-info-card reveal">
+                        <h3 class="contact-info-title" data-lang-fa="اطلاعات تماس" data-lang-en="Contact Info">اطلاعات
+                            تماس</h3>
+                        <div class="contact-info-item">
+                            <div class="ci-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <div class="ci-label">GitHub</div>
+                                <div class="ci-value"><a href="#" target="_blank"
+                                        class="tech-font">github.com/sina-gholami</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="ci-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="ci-label">LinkedIn</div>
+                                <div class="ci-value"><a href="#" target="_blank"
+                                        class="tech-font">linkedin.com/in/sina-gholami</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="ci-label" data-lang-fa="شماره تماس" data-lang-en="Phone">شماره تماس</div>
+                                <div class="ci-value tech-font" dir="ltr">0902-208-1725</div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="ci-label">Email</div>
+                                <div class="ci-value"><a href="mailto:gholamisina123@gmail.com"
+                                        class="tech-font">gholamisina123@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- فوتر -->
+    <footer>
+        <div class="container">
+            <p><span class="footer-gradient" data-lang-fa="سینا غلامی" data-lang-en="Sina Gholami">سینا غلامی</span>
+                &copy; <span class="tech-font">2025</span> — <span data-lang-fa="ساخته شده با عشق و کد"
+                    data-lang-en="Built with love & code">ساخته شده با عشق و کد</span></p>
+        </div>
+    </footer>
+
+    <!-- توست اعلان -->
+    <div class="toast" id="toast"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
